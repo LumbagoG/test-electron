@@ -9,18 +9,18 @@
 ## Требования
 
 - Node.js **18+**
-- npm (или pnpm/yarn — но команды ниже под npm)
+- Yarn (в проекте часть скриптов вызывает `yarn`, поэтому он должен быть доступен)
 
 ## Установка
 
 ```bash
-npm i
+yarn
 ```
 
 ## Запуск в dev режиме
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Откроется окно Electron. На главной странице:
@@ -30,13 +30,13 @@ npm run dev
 ## Сборка (production)
 
 ```bash
-npm run build
+yarn build
 ```
 
 Потом можно проверить production-сборку:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 ## Упаковка приложения (electron-builder)
@@ -44,7 +44,7 @@ npm run preview
 - **Пакет в папку (без установщика)**:
 
 ```bash
-npm run pack
+yarn pack
 ```
 
 Результат: `release/` (например, `release/mac-arm64/*.app`).
@@ -52,7 +52,7 @@ npm run pack
 - **Инсталлятор/дистрибутивы**:
 
 ```bash
-npm run dist
+yarn dist
 ```
 
 ## Важное про macOS (подпись)
@@ -62,18 +62,26 @@ npm run dist
 ## Линтинг
 
 ```bash
-npm run lint
+yarn lint
 ```
 
-## Авто-форматирование / авто-фиксы
+`lint` запускает полный набор проверок: **Biome + TypeScript + Steiger**.
+
+- **Biome**: `yarn lint:biome`
+- **TypeScript**: `yarn lint:types`
+- **Steiger (FSD)**: `yarn lint:steiger` (проверяет только `src/renderer`)
+
+## Авто-форматирование
 
 ```bash
-npm run check:write
+yarn format
 ```
 
 ## Pre-commit хук
 
-В проекте подключён **husky**: перед каждым коммитом запускается `npm run lint` (то есть `biome check .`).
+В проекте подключён **husky**: перед каждым коммитом запускается `npm run lint:all` (Biome + TS + Steiger).
+
+Дополнительно настроен `lint-staged.config.js` (если захочешь включить автофиксы для staged-файлов).
 
 ## Структура проекта (ключевое)
 
