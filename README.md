@@ -1,6 +1,6 @@
-# Test Electron (Electron + React + Vite + TypeScript)
+# Windi (Electron + React + Vite + TypeScript)
 
-Тестовое приложение на Electron, где:
+Тестовое приложение **Windi** на Electron, где:
 
 - **main**: создаёт окно, регистрирует IPC
 - **preload**: типизированный безопасный мост `window.electronAPI`

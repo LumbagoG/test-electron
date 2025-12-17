@@ -5424,29 +5424,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test-electron@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "test-electron@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:^2.3.8"
-    "@feature-sliced/steiger-plugin": "npm:^0.5.7"
-    "@types/react": "npm:^19.0.10"
-    "@types/react-dom": "npm:^19.0.4"
-    "@vitejs/plugin-react": "npm:^4.3.4"
-    cross-env: "npm:^7.0.3"
-    electron: "npm:^33.2.0"
-    electron-builder: "npm:^25.1.8"
-    electron-vite: "npm:^2.3.0"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^15.5.2"
-    react: "npm:^19.1.0"
-    react-dom: "npm:^19.1.0"
-    steiger: "npm:^0.5.11"
-    typescript: "npm:^5.7.2"
-    vite: "npm:^5.4.21"
-  languageName: unknown
-  linkType: soft
-
 "tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.15":
   version: 0.2.15
   resolution: "tinyglobby@npm:0.2.15"
@@ -5742,6 +5719,29 @@ __metadata:
   checksum: 10c0/1d9c2a3e36dfb09832f38e2e699c367ef190f96b82c71f809bc0822c306f5379df87bab47bed27ea99106d86447e50eb972d3c516c2f95782807a9d082fbea95
   languageName: node
   linkType: hard
+
+"windi@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "windi@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:^2.3.8"
+    "@feature-sliced/steiger-plugin": "npm:^0.5.7"
+    "@types/react": "npm:^19.0.10"
+    "@types/react-dom": "npm:^19.0.4"
+    "@vitejs/plugin-react": "npm:^4.3.4"
+    cross-env: "npm:^7.0.3"
+    electron: "npm:^33.2.0"
+    electron-builder: "npm:^25.1.8"
+    electron-vite: "npm:^2.3.0"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^15.5.2"
+    react: "npm:^19.1.0"
+    react-dom: "npm:^19.1.0"
+    steiger: "npm:^0.5.11"
+    typescript: "npm:^5.7.2"
+    vite: "npm:^5.4.21"
+  languageName: unknown
+  linkType: soft
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0, wrap-ansi@npm:^7.0.0":
   version: 7.0.0
