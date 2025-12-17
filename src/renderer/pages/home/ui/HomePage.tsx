@@ -1,4 +1,4 @@
-import { getElectronApi } from "@shared/api/electron";
+import { getElectronApi } from "@shared/api";
 import { Card } from "@shared/ui";
 import { SystemPingWidget } from "@widgets/systemPingWidget";
 

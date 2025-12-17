@@ -1,4 +1,4 @@
-import { getElectronApi } from "@shared/api/electron";
+import { getElectronApi } from "@shared/api";
 import { useCallback, useState } from "react";
 import type { SystemPingState } from "./types";
 
