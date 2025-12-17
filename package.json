@@ -1,0 +1,35 @@
+{
+    "name": "test-electron",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Test Electron + React (Vite) app with FSD structure",
+    "main": "dist/main/index.cjs",
+    "author": "",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "dev": "cross-env ELECTRON_ENTRY=out/main/index.js electron-vite dev",
+        "build": "electron-vite build",
+        "preview": "electron-vite preview",
+        "lint": "biome check .",
+        "format": "biome format --write .",
+        "check:write": "biome check --write .",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "@vitejs/plugin-react": "^4.3.4",
+        "@biomejs/biome": "^2.3.8",
+        "electron": "^33.2.0",
+        "electron-vite": "^2.3.0",
+        "typescript": "^5.7.2",
+        "vite": "^5.4.21",
+        "cross-env": "^7.0.3",
+        "husky": "^9.1.7"
+    }
+}

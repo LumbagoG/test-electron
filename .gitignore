@@ -1,3 +1,7 @@
+node_modules
+dist
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -76,6 +80,8 @@ web_modules/
 
 # Next.js build output
 .next
+
+# electron-vite dev output
 out
 
 # Nuxt.js build / generate output

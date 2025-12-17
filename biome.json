@@ -1,0 +1,100 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.3.9/schema.json",
+    "files": {
+        "includes": [
+            "**",
+            "!**/.next",
+            "!**/.turbo",
+            "!**/build",
+            "!**/coverage",
+            "!**/dist",
+            "!**/out",
+            "!**/node_modules",
+            "!**/public",
+            "!**/storybook-static"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 100
+    },
+    "javascript": {
+        "globals": ["React", "JSX"],
+        "formatter": {
+            "quoteStyle": "double",
+            "jsxQuoteStyle": "double",
+            "trailingCommas": "all"
+        }
+    },
+    "css": {
+        "globals": ["apply", "config", "layer", "responsive", "screen", "tailwind", "variants"],
+        "formatter": {
+            "enabled": true,
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "quoteStyle": "double"
+        },
+        "linter": {
+            "enabled": true
+        },
+        "parser": {
+            "allowWrongLineComments": true,
+            "tailwindDirectives": true
+        }
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "correctness": {
+                "noUnusedVariables": "warn"
+            },
+            "style": {
+                "noNonNullAssertion": "off",
+                "noInferrableTypes": "off",
+                "useImportType": "off",
+                "noParameterAssign": "error",
+                "useAsConstAssertion": "error",
+                "useDefaultParameterLast": "error",
+                "useEnumInitializers": "error",
+                "useSelfClosingElements": "error",
+                "useSingleVarDeclarator": "error",
+                "noUnusedTemplateLiteral": "error",
+                "useNumberNamespace": "error",
+                "noUselessElse": "error"
+            },
+            "a11y": {
+                "noSvgWithoutTitle": "off"
+            },
+            "security": {
+                "noDangerouslySetInnerHtml": "off"
+            },
+            "suspicious": {
+                "noArrayIndexKey": "off"
+            },
+            "nursery": {
+                "useSortedClasses": {
+                    "level": "error",
+                    "options": {
+                        "attributes": ["classList", "className", "class"],
+                        "functions": ["clsx", "cva", "tw", "tw.*"]
+                    }
+                }
+            }
+        }
+    },
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": {
+                    "level": "on",
+                    "options": {
+                        "groups": [":URL:", ":NODE:"]
+                    }
+                }
+            }
+        }
+    }
+}
